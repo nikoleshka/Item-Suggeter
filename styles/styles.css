@@ -1,0 +1,55 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 16px;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.loadingsk .loader {
+  color: #000;
+  width: 4px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  box-shadow: 19px 0 0 7px, 38px 0 0 3px, 57px 0 0 0;
+  transform: translateX(-38px);
+  animation: l21 0.5s infinite alternate linear;
+}
+@keyframes l21 {
+  50% {
+    box-shadow: 19px 0 0 3px, 38px 0 0 7px, 57px 0 0 3px;
+  }
+  100% {
+    box-shadow: 19px 0 0 0, 38px 0 0 3px, 57px 0 0 7px;
+  }
+}
+
+main {
+  background-color: #E6BAA3;
+  height: 100vh;
+}
+
+.btn {
+  width: 80%;
+  margin: 43vh 0;
+  margin-left: 4vw;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.row img {
+  border-radius: 6px;
+}
